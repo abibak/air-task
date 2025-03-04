@@ -1,0 +1,12 @@
+:root {
+    /* colors */
+    --color-primary: #C3002F;
+    --color-secondary: #DCDCDC;
+    --color-thirdy: #151414;
+
+    --color-secondary-hover: #a8a8a8;
+
+    /* screen sizes */
+    --screen-large: 1920px;
+    --screen-medium: 1530px;
+}

@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+    .intro__container {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro__title {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 490px) {
+    .intro__container {
+        margin: 0 10px;
+    }
+
+    .intro__title {
+        font-size: 38px;
+    }
+
+    .intro__subtitle {
+        font-size: 22px;
+    }
+}

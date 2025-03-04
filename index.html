@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="./src/assets/variables.css">
+    <link rel="stylesheet" href="./src/assets/main.css">
+    <link rel="stylesheet" href="./src/index.css">
+
+    <!-- scripts -->
+    <script type="module" src="./src/blocks/index.js"></script>
+</head>
+
+<body>
+    <div class="blackout-background"></div>
+
+    <div class="callback-form">
+        <div class="callback-form__container flex flex-full-center">
+            <div class="callback-form__close">
+                <img src="./src/assets/images/icons/close.png" alt="Close">
+            </div>
+
+            <div class="callback-form__title">
+                <p>Заявка на звонок</p>
+            </div>
+
+            <div class="callback-form__desc">Наши менеджеры свяжутся с Вами в ближайшее время и ответят на ваши вопросы!</div>
+
+            <form action="" method="POST" class="callback-form__form flex">
+                <input type="text" name="first_name" placeholder="Введите Ваше имя*" required class="callback-form__input">
+                <input type="tel" name="phone" placeholder="Введите Ваш телефон*" required class="callback-form__input">
+
+                <p class="callback-form__privacy">* Отправляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a></p>
+
+                <button class="base-button-color callback-form__button">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="wrapper">
+            <div class="header flex">
+                <div class="header-logo">
+                    <img src="./src/assets/images/Logo.png" alt="Logo">
+                </div>
+
+                <div class="header-nav">
+                    <div class="header-nav__links">
+                        <a href="#" class="header-nav__link">Каталог</a>
+                        <a href="#" class="header-nav__link">Услуги</a>
+                        <a href="#" class="header-nav__link">Наши проекты</a>
+                        <a href="#" class="header-nav__link">Информация</a>
+                        <a href="#" class="header-nav__link">Контакты</a>
+                    </div>
+                </div>
+
+                <div class="header-call-back">
+                    <div class="header-call-back__number flex">
+                        <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.0325 11.4951C16.7877 12.1994 18.0973 13.1382 19.0905 14.2425C19.3411 16.0305 17.9434 17.3416 16.6662 18.1466C13.6394 18.6816 9.33998 16.8934 5.78318 13.3366C2.22638 9.7795 0.438378 5.48042 0.973235 2.45367C1.77816 1.17639 3.08918 -0.221299 4.87735 0.0294329C5.98159 1.02279 6.92057 2.33247 7.6249 4.08783C7.74209 4.38006 7.67513 4.71355 7.46084 4.94429C7.10941 5.32277 6.47393 5.96055 5.49383 6.78314C5.247 6.99032 5.18687 7.34429 5.34437 7.6254C6.02861 8.84655 6.91884 10.0283 8.00539 11.115C9.09142 12.201 10.2747 13.093 11.494 13.7791C11.7753 13.9374 12.1303 13.8771 12.3376 13.6295C13.1596 12.6477 13.7971 12.0115 14.1756 11.6598C14.4063 11.4451 14.74 11.378 15.0323 11.4954L15.0325 11.4951Z"
+                                fill="#151414" />
+                        </svg>
+
+                        <div class="header-call-back__phone">+7 (913) 567-99-99</div>
+                    </div>
+
+                    <div class="header-call-back-button">
+                        <button class="header-call-back__button base-button-color">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="intro flex flex-vertical-center">
+                <div class="intro__container">
+                    <div class="intro__title">
+                        <p>Европейская терраса для вашего дома</p>
+                    </div>
+
+                    <div class="intro__subtitle">
+                        <p>Террасная композитная доска в Москве</p>
+                    </div>
+
+                    <button class="base-button-color intro__button">Вызвать на замер</button>
+                </div>
+            </div>
+
+            <div class="services">
+                <div class="services__container">
+                    <div class="services__title">
+                        <p>Что мы можем сделать для вас</p>
+                    </div>
+
+                    <div class="services__slider">
+                        <div class="services__cards">
+                            <div class="services__cards-container flex">
+                                <div class="services-card">
+                                    <img src="./src/assets/images/decking.jpg" alt="Монтаж декинга"
+                                        class="services-card__image">
+                                    <p class="services-card__subtext flex flex-full-center">Монтаж декинга</p>
+                                </div>
+
+                                <div class="services-card">
+                                    <img src="./src/assets/images/facade.jpg" alt="Фасадные работы">
+                                    <p class="services-card__subtext flex flex-full-center">Фасадные работы</p>
+                                </div>
+
+                                <div class="services-card">
+                                    <img src="./src/assets/images/projects.jpg" alt="Проектные работы">
+                                    <p class="services-card__subtext flex flex-full-center">Проектные работы</p>
+                                </div>
+
+                                <div class="services-card">
+                                    <img src="./src/assets/images/improvement.jpg"
+                                        alt="Строительство и благоустройство">
+                                    <p class="services-card__subtext flex flex-full-center">Строительство и
+                                        благоустройство
+                                    </p>
+                                </div>
+
+                                <div class="services-card">
+                                    <img src="./src/assets/images/prod-and-install.jpg"
+                                        alt="Производство и монтаж свай">
+                                    <p class="services-card__subtext flex flex-full-center">Строительство и
+                                        благоустройство
+                                    </p>
+                                </div>
+
+                                <div class="services-card">
+                                    <img src="./src/assets/images/construction.jpg"
+                                        alt="Строительство и благоустройство">
+                                    <p class="services-card__subtext flex flex-full-center">Строительство и
+                                        благоустройство
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__arrow-left">
+                            <img src="./src/assets/images/icons/arrow-slider.png" alt="Стрелка слайдера влево">
+                        </div>
+
+                        <div class="services__arrow-right">
+                            <img src="./src/assets/images/icons/arrow-slider.png" alt="Стрелка слайдера вправо">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__blocks flex">
+                    <div class="footer-details footer__item">
+                        <p class="footer__title">Реквизиты</p>
+                        <div class="footer-details__info">
+                            <p class="footer-details__tin footer-card__item">ИНН 123456789</p>
+                            <p class="footer-details__ogrn footer-card__item">ОГРН 1212121212121</p>
+                        </div>
+
+                        <div class="footer-copyright">
+                            <p class="footer-copyright__copyright footer-card__item">© ООО «Терраса» 2009 - 2023</p>
+                            <a href="#" class="footer-copyright__policy footer-card__item">Политика
+                                конфиденциальности</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-catalog footer__item">
+                        <p class="footer__title">Каталог</p>
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__link">Террасная доска из ДПК</a>
+                            <a href="#" class="footer-nav__link">Террасная доска массив</a>
+                            <a href="#" class="footer-nav__link">Ступени из ДПК</a>
+                            <a href="#" class="footer-nav__link">Садовый паркет</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-services footer__item">
+                        <p class="footer__title">Услуги</p>
+                        <div class="footer-nav">
+                            <a href="#" class="footer-nav__link">Фасадные работы</a>
+                            <a href="#" class="footer-nav__link">Производство свай</a>
+                            <a href="#" class="footer-nav__link">Монтаж свай</a>
+                            <a href="#" class="footer-nav__link">Строительство террас</a>
+                            <a href="#" class="footer-nav__link">Подбор материалов</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-contacts footer__item">
+                        <p class="footer__title">Контакты</p>
+
+                        <div class="footer-contacts container">
+                            <p class="footer-card__item">г. Город, ул. Улица, д.1.</p>
+
+                            <p class="footer-card__item">+7 (999) 999-99-19</p>
+                            <p class="footer-card__item">+7 (913) 567-99-99</p>
+
+                            <p class="footer-contacts__email footer-card__item">info@terrace.ru</p>
+                            <p class="footer-contacts__work-schedule footer-card__item">Пн — Вс с 08:00 до 22:00</p>
+
+                            <div class="footer-contacts__socials flex">
+                                <svg class="social-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0 0V20H20V0H0ZM14.5884 11.1448L16.3253 13.1406C16.5474 13.3958 16.3661 13.7938 16.0279 13.7938H14.0678C13.758 13.7938 13.4597 13.6765 13.2329 13.4656L12.6524 12.9259C11.9973 12.3527 11.7189 12.1562 11.4569 12.1562C11.1949 12.1562 11.1294 12.3526 11.1294 12.8603C11.1294 13.3679 11.0312 13.7938 9.52457 13.7938C8.01798 13.7938 6.83892 12.6639 5.51249 10.9117C4.18607 9.15947 3.59653 7.27623 3.59653 7.27623C3.52335 7.04051 3.69956 6.80134 3.9464 6.80134H5.51496C5.81332 6.80134 6.08505 6.97375 6.21016 7.24458C6.33856 7.52257 6.55944 7.95155 6.93724 8.58625C7.47337 9.48691 7.9884 9.89265 8.28015 10.0654C8.38878 10.1298 8.52576 10.0502 8.52576 9.92397V7.76364C8.52576 7.48095 8.42364 7.20782 8.23812 6.99452L8.01699 6.74026C7.9598 6.6745 8.00653 6.57205 8.09364 6.57205H10.5727C10.9525 6.57205 11.2605 6.87996 11.2605 7.25982V9.77216C11.2605 9.93402 11.4705 9.99732 11.56 9.86249L13.3442 7.17345C13.4849 6.96147 13.7224 6.83397 13.9768 6.83397H16.0712C16.3575 6.83397 16.5315 7.14922 16.3792 7.39153L14.5258 10.3372C14.3664 10.5908 14.3917 10.9188 14.5884 11.1448Z"
+                                        fill="white" />
+                                </svg>
+
+                                <svg class="social-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_650)">
+                                        <rect width="20" height="20" fill="#151414" />
+                                        <path
+                                            d="M0 0V20H20V0H0ZM12.7722 9.67779H10.6376V16.8063H8.30175V9.67779H6.74447V8.08029H8.31518V5.52856C8.31518 4.23906 9.36056 3.19368 10.6501 3.19368H12.9064V5.22082H11.281C10.9257 5.22082 10.6376 5.50887 10.6376 5.86417V8.08029H13.2554L12.7722 9.67779Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_650">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                <svg class="social-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_652)">
+                                        <rect width="20" height="20" fill="#151414" />
+                                        <path
+                                            d="M10.009 4.18311C6.81071 4.18311 4.20874 6.78508 4.20874 9.98333C4.20874 11.0977 4.52546 12.1799 5.12459 13.1128L5.26858 13.3371L4.70443 15.3408L6.77749 14.8071L6.9913 14.9377C7.89771 15.4911 8.94122 15.7835 10.009 15.7835C13.2072 15.7835 15.8091 13.1816 15.8091 9.98333C15.8091 6.78508 13.2072 4.18311 10.009 4.18311ZM13.5657 11.766L13.4933 12.104C13.4117 12.4854 13.1852 12.8227 12.8566 13.0329C12.4418 13.2983 11.9041 13.4286 11.2206 13.2353C9.09948 12.6355 7.89991 11.2312 7.25628 10.3535C6.61261 9.47575 6.36396 8.59804 6.52484 7.88125C6.63276 7.40053 6.9841 7.03167 7.20384 6.84081C7.31149 6.74734 7.45113 6.69977 7.59346 6.70753L8.04671 6.73224C8.13597 6.73711 8.2147 6.79223 8.24985 6.87443L8.91011 8.41925C8.94539 8.50179 8.93052 8.5972 8.87184 8.66509L8.29712 9.32996C8.25051 9.38385 8.24239 9.46065 8.27522 9.52389C9.03216 10.9819 10.4117 11.5597 10.8235 11.7044C10.8936 11.7291 10.9714 11.7058 11.0169 11.6469L11.6182 10.8673C11.6851 10.7806 11.803 10.7516 11.9025 10.7974L13.4343 11.5035C13.5342 11.5496 13.5887 11.6586 13.5657 11.766Z"
+                                            fill="white" />
+                                        <path
+                                            d="M0 0V20H20V0H0ZM10.009 16.9686C8.80888 16.9686 7.63371 16.6614 6.59411 16.078L3.0059 17.0017L3.98555 13.5223C3.35558 12.452 3.02389 11.2343 3.02389 9.98343C3.02389 6.13182 6.1574 2.9983 10.009 2.9983C13.8606 2.9983 16.9941 6.13182 16.9941 9.98343C16.9941 13.835 13.8606 16.9686 10.009 16.9686Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_652">
+                                            <rect width="20" height="20" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

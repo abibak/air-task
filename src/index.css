@@ -1,0 +1,13 @@
+/* import all blocks */
+@import './blocks/header/header.css';
+@import './blocks/intro/intro.css';
+@import './blocks/services/services.css';
+@import './blocks/footer/footer.css';
+@import './blocks/callback-form/callback-form.css';
+
+/* import all media files */
+@import './media/main.media.css';
+@import './media/header.media.css';
+@import './media/intro.media.css';
+@import './media/services.media.css';
+@import './media/footer.media.css';

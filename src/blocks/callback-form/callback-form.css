@@ -1,0 +1,95 @@
+.callback-form {
+    display: none;
+    max-width: 470px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1;
+    font-family: 'Jost Light', sans-serif;
+    font-size: 16px;
+    border: 1px solid #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.callback-form__container {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    color: #4A4A4A;
+    padding: 60px;
+    position: relative;
+}
+
+.callback-form__title {
+    color: var(--color-thirdy);
+    font-family: 'Fira Sans Condensed Bold';
+    font-size: 30px;
+}
+
+.callback-form__desc {
+    margin-top: 10px;
+}
+
+.callback-form__form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.callback-form__input {
+    width: 100%;
+    font-size: 16px;
+    height: 44px;
+    padding: 0 17px;
+    color: #4A4A4A;
+}
+
+.callback-form__privacy {
+    width: 266px;
+    text-align: left;
+    margin-top: 15px;
+    align-self: flex-start;
+}
+
+.callback-form__input:first-child {
+    margin-bottom: 15px;
+}
+
+.callback-form__input::placeholder {
+    color: #4A4A4A;
+}
+
+.callback-form__button {
+    width: 179px;
+    height: 45px;
+    margin-top: 15px;
+}
+
+.callback-form__close {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.callback-form__active {
+    display: block;
+}
+
+.blackout-background {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #151414;
+    opacity: .7;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.blackout-background--active {
+    display: block;
+}

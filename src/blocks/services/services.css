@@ -1,0 +1,96 @@
+.services {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.services__title {
+    font-family: 'Fira Sans Condensed Bold', sans-serif;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.services__slider {
+    position: relative;
+}
+
+.services__cards {
+    height: 400px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.services__cards-container {
+    height: 400px;
+    gap: 30px;
+    position: relative;
+    -moz-transition: transform .3s;
+    -webkit-transition: transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+}
+
+.services-card {
+    position: relative;
+    max-height: 370px;
+    flex-shrink: 0;
+}
+
+.services-card > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.services-card__subtext {
+    font-family: 'Fira Sans Condensed Medium', sans-serif;
+    max-width: 226px;
+    width: 100%;
+    height: 84px;
+    text-align: center;
+    color: #fff;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.services__arrow-left,
+.services__arrow-right {
+    position: absolute;
+    top: calc(50% - (17px / 2));
+    cursor: pointer;
+    -moz-transition: transform .2s;
+    -webkit-transition: transform .2s;
+    -o-transition: transform .2s;
+    transition: transform .2s;
+}
+
+.services__arrow-left {
+    left: -61px;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.services__arrow-left:hover {
+    -moz-transform: rotate(180deg) translateX(5px);
+    -webkit-transform: rotate(180deg) translateX(5px);
+    -o-transform: rotate(180deg) translateX(5px);
+    transform: rotate(180deg) translateX(5px);
+}
+
+.services__arrow-right {
+    right: -61px;
+}
+
+.services__arrow-right:hover {
+    -moz-transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+}

@@ -1,0 +1,27 @@
+.header {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.header-call-back {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-call-back__number {
+    padding-right: 30px;
+}
+
+.header-call-back__number > svg {
+    margin-right: 8px;
+}
+
+.header-call-back__button {
+    width: 172px;
+    height: 45px;
+}
